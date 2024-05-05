@@ -29,6 +29,10 @@
     padding: 120px 0;
 }
 
+.advantages-item {
+    width: 264px;
+}
+
 .advantages-picture {
     display: flex;
     align-items: center;
@@ -38,6 +42,34 @@
     background-color: rgba(var(--cloud), 1);
     border-radius: 4px;
     margin-bottom: 8px;
+}
+
+.advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+/* #endregion */
+
+/* #region Services */
+.section-services {
+    display: flex;
+}
+/* #endregion */
+
+/* #region Team */
+.section-team {
+    padding: 120px 0;
+}
+/* #endregion */
+
+/* #region Customers */
+.section-customers {
+    padding: 120px 0;
+}
+
+.customers-list {
+    justify-content: space-between;
 }
 
 /* #endregion */

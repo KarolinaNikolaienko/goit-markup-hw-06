@@ -1,3 +1,10 @@
+:root {
+    /* Item grid */
+    --gap-row-a: 72px;
+    --gap-col-a: 24px;
+    --item-amount: 2;
+}
+
 /* #region Base styles */
 .container {
     max-width: 768px;
@@ -7,8 +14,6 @@
 .wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
 }
 /* #endregion */
 
@@ -30,10 +35,64 @@
 
 /* #region Advantages */
 .section-advantages {
-    
+    padding: 96px 0;
 }
+
+.advantages-list {
+    row-gap: var(--gap-row-a);
+    column-gap: var(--gap-col-a);
+}
+
+.advantages-item {
+    width: calc((100% - (var(--gap-col-a) * (var(--item-amount) - 1))) / var(--item-amount));
+}
+
 .advantages-picture {
     display: none;
+}
+
+.advantages-title {
+    text-align: left;
+}
+
+/* #endregion */
+
+/* #region Services */
+.section-services {
+    display: none;
+}
+
+/* #endregion */
+
+/* #region Team */
+.section-team {
+    padding: 96px 0;
+}
+
+.team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+}
+/* #endregion */
+
+/* #region Customers */
+.section-customers {
+    padding: 96px 0;
+}
+
+.customers-list {
+    column-gap: var(--gap-col-a);
+    row-gap: var(--gap-row-a);
+}
+
+.customers-item {
+    max-width: 168px;
+    --customer-amount: 3;
+    width: calc((100% - (var(--gap-col-a) * (var(--customer-amount) - 1))) / var(--customer-amount));
+}
+
+.customers-link {
+    width: 100%;
 }
 
 /* #endregion */

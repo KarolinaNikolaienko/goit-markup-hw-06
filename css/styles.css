@@ -21,8 +21,8 @@
     --green: 49, 208, 170;
 
     /* Card grid */
-    --gap-col: 24px;
     --gap-row: 48px;
+    --gap-col: 24px;
     --card-amount: 3;
 
     /* Transition */
@@ -134,19 +134,6 @@ button {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 72px;
-}
-
-.card-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: rgba(var(--navy_blue), 1);
-    margin-bottom: 8px;
-}
-
-.card-paragraph {
-    color: rgba(var(--slate), 1)
 }
 
 /* #endregion */
@@ -291,13 +278,13 @@ button {
 }
 .advantages-title {
     margin-bottom: 8px;
-    font-weight: 500;
+    /* font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.2; */
 }
 
 .advantages-item {
-    width: 264px;
+    /* width: 264px; */
 }
 
 /* .advantages-picture {
@@ -325,7 +312,7 @@ button {
 /* #region Section 3 - Our team */
 .section-team {
     background: rgba(var(--cloud), 1);
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 .team-item {
     background: rgba(var(--white), 1);
@@ -343,22 +330,37 @@ button {
 }
 
 .team-name-header {
-    text-align: center;
+    
 }
 
 .team-position-paragraph{
-    text-align: center;
-    margin-bottom: 8px;
+    
 }
 
 .card-title-wrapper {
     padding: 32px 16px;
 }
+
+.card-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: rgba(var(--navy_blue), 1);
+    margin-bottom: 8px;
+}
+
+.card-paragraph {
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgba(var(--slate), 1)
+}
 /* #endregion */
 
 /* #region Section 4 - Customers */
 .section-customers {
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 .customers-link {
     display: flex;
@@ -366,7 +368,7 @@ button {
     justify-content: center;
     border: 1px solid rgba(var(--light_slate), 1);
     border-radius: 4px;
-    width: 168px;
+    /* width: 168px; */
     height: 88px;
     color: rgba(var(--light_slate), 1);
     transition: var(--trans);

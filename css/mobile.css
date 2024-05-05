@@ -1,3 +1,10 @@
+:root {
+    /* Advandages item grid */
+    --gap-row-c: 72px;
+    --gap-col-c: 16px;
+    --customer-amount: 2;
+}
+
 /* #region Base styles */
 .container {
     min-width: 320px;
@@ -35,7 +42,63 @@
     padding: 96px 0;
 }
 
+.advantages-item {
+    width: 100%;
+}
+
 .advantages-picture {
     display: none;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.advantages-paragraph {
+    font-weight: 500;
+}
+/* #endregion */
+
+/* #region Services */
+.section-services {
+    display: none;
+}
+/* #endregion */
+
+/* #region Team */
+.section-team {
+    padding: 96px 0;
+}
+/* #endregion */
+
+/* #region Customers */
+.section-customers {
+    padding: 96px 0;
+}
+
+.customers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: var(--gap-col-c);
+    row-gap: var(--gap-row-c);
+}
+
+.customers-item {
+    max-width: 190px;
+    width: calc((100% - (var(--gap-col-c) * (var(--customer-amount) - 1))) / var(--customer-amount));
+}
+
+.customers-link {
+    width: 100%;
+}
+/* #endregion */
+
+/* #region Portfolio */
+.portfolio {
+    padding: 48px 0;
 }
 /* #endregion */
