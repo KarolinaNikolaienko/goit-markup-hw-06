@@ -96,3 +96,30 @@
 }
 
 /* #endregion */
+
+/* #region Portfolio */
+.portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.portfolio-filter-button {
+    padding: 12px 24px;
+}
+
+.portfolio-buttons-list {
+    margin-bottom: 64px;
+}
+
+.portfolio-projects-list {
+    justify-content: left;
+}
+
+.portfolio-projects-item {
+    width: calc((100% - var(--gap-col-a) * (var(--item-amount) - 1)) / var(--item-amount));
+}
+
+.overlay {
+    display: none;
+}
+/* #endregion */

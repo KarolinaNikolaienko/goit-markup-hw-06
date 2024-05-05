@@ -74,6 +74,7 @@ address {
 
 button {
     font-family: inherit;
+    line-height: 1.5;
     cursor: pointer;
     border: 0;
     padding: 12px 24px;
@@ -330,11 +331,12 @@ button {
 }
 
 .team-name-header {
-    
+    text-align: center;
 }
 
 .team-position-paragraph{
-    
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .card-title-wrapper {
@@ -342,7 +344,6 @@ button {
 }
 
 .card-title {
-    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -352,8 +353,6 @@ button {
 }
 
 .card-paragraph {
-    text-align: center;
-    margin-bottom: 8px;
     color: rgba(var(--slate), 1)
 }
 /* #endregion */
@@ -521,15 +520,15 @@ button {
 
 /* #region Portfolio */
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
 }
 
 .portfolio-buttons-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .portfolio-filter-button {
@@ -542,7 +541,8 @@ button {
 }
 
 .portfolio-filter-button:hover,
-.portfolio-filter-button:focus {
+.portfolio-filter-button:focus,
+.portfolio-filter-button:active {
     background-color: rgba(var(--ocean), 1);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     color: rgba(var(--white), 1);
@@ -552,12 +552,13 @@ button {
 .portfolio-projects-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: var(--gap-col);
     row-gap: var(--gap-row);
 }
 
 .portfolio-projects-item {
-    width: calc((100% - var(--gap-col) * (var(--card-amount)) - 1) / var(--card-amount));
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: var(--trans);
     transition-property: box-shadow;
 }
@@ -567,26 +568,9 @@ button {
     overflow: hidden;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px 32px;
-    background-color: rgba(var(--iris), 1);
-    color: rgba(var(--cloud), 1);
-    transform: translateY(100%);
-    transition: var(--trans);
-    transition-property: transform;
-}
-
+.portfolio-projects-item:hover,
 .portfolio-projects-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.portfolio-projects-item:hover .overlay {
-    transform: translateY(0);
 }
 
 .portfolio-title-wrapper {

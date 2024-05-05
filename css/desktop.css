@@ -73,3 +73,39 @@
 }
 
 /* #endregion */
+
+/* #region Portfolio */
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.portfolio-buttons-list {
+    margin-bottom: 72px;
+}
+
+.portfolio-projects-item {
+    width: calc((100% - var(--gap-col) * (var(--card-amount) - 1)) / var(--card-amount));
+    box-shadow: none;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: rgba(var(--iris), 1);
+    color: rgba(var(--cloud), 1);
+    transform: translateY(100%);
+    transition: var(--trans);
+    transition-property: transform;
+}
+
+.portfolio-projects-item:hover .overlay,
+.portfolio-projects-item:focus .overlay {
+    transform: translateY(0);
+}
+/* #endregion */
