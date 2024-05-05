@@ -1,0 +1,41 @@
+/* #region Base styles */
+.container {
+    min-width: 320px;
+    max-width: 428px;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+.wrapper {
+    flex-direction: column;
+    gap: 72px;
+}
+
+/* #endregion */
+
+/* Main */
+/* #region Hero */
+.hero {
+    width: 100%;
+    padding: 112px 0;
+}
+
+.hero-title {
+    max-width: 320px;
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-transform: capitalize;
+}
+/* #endregion */
+
+/* #region Advantages */
+.section-advantages {
+    padding: 96px 0;
+}
+
+.advantages-picture {
+    display: none;
+}
+/* #endregion */

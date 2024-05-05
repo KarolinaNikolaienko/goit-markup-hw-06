@@ -1,0 +1,39 @@
+/* #region Base styles */
+.container {
+    max-width: 768px;
+    outline-color: cadetblue;
+}
+
+.wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+}
+/* #endregion */
+
+/* Main */
+/* #region Hero */
+.hero {
+    width: 100%;
+    padding: 112px 0;
+}
+
+.hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07143;
+    text-transform: none;
+}
+/* #endregion */
+
+/* #region Advantages */
+.section-advantages {
+    
+}
+.advantages-picture {
+    display: none;
+}
+
+/* #endregion */
