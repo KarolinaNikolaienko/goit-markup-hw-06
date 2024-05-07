@@ -21,6 +21,13 @@
 
 /* #endregion */
 
+/* #region Header */
+.header-menu-list,
+.header-contacts {
+    display: none;
+}
+/* #endregion */
+
 /* Main */
 /* #region Hero */
 .hero {
@@ -97,6 +104,45 @@
 }
 /* #endregion */
 
+/* #region Footer*/
+.footer {
+    padding: 96px 0;
+}
+.footer .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.footer-block {
+    align-items: center;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.logo-footer {
+    display: block;
+    text-align: center;
+}
+
+.footer-subscribe {
+    width: 100%;
+}
+
+.footer-email-input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+    /* opacity: 0.3; */
+}
+
+.subscribe-button {
+    margin: 0 auto;
+}
+/* #endregion */
+
 /* #region Portfolio */
 .portfolio {
     padding: 48px 0;
@@ -138,5 +184,108 @@
 
 .overlay {
     display: none;
+}
+/* #endregion */
+
+/* #region Menu mobile*/
+.menu-toggle {
+    background-color: rgba(var(--cornflower), 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 35px 40px 40px;
+    padding-right: 35px;
+    background-color: rgba(var(--white), 1);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: var(--trans);
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    /* color: rgba(var(--white), 1); */
+}
+
+.menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 40px;
+    height: 100%;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.mobile-menu-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 427px) {
+    .mobile-menu-item {
+        font-size: 25px;
+    }
+}
+
+.mobile-menu-item.link {
+    color: rgba(var(--navy_blue), 1);
+}
+
+.mobile-menu-item.link:active {
+    color: rgba(var(--ocean), 1);
+}
+
+.mobile-menu-tel {
+    display: block;
+    color: rgba(var(--iris), 1);
+    margin-bottom: 40px;
+}
+
+.mobile-menu-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: rgba(var(--slate), 1);
+}
+
+.menu-contacts-container {
+    /* position: absolute;
+    bottom: 40px; */
+    width: 100%;
+}
+
+.menu-contacts {
+    margin-bottom: 48px;
+}
+
+.menu-media-list {
+    gap: 56px;
+}
+
+@media screen and (max-width: 427px) {
+    .menu-media-list {
+        gap: 26px;
+    }
 }
 /* #endregion */

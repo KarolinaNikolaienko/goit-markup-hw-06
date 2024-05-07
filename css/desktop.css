@@ -12,6 +12,21 @@
 /* #endregion */
 
 /* Main */
+/* #region Header */
+.header-contacts-list {
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header-contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* #endregion */
+
 /* #region Hero */
 .hero {
     width: 100%;
@@ -72,6 +87,30 @@
     justify-content: space-between;
 }
 
+/* #endregion */
+
+/* #region Footer */
+.footer {
+    padding: 100px 0;
+}
+
+.footer .container {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.footer-logo-paragraph {
+    margin-right: 120px;
+}
+
+.footer-social-media {
+    margin-right: 80px;
+}
+
+.footer-email-input {
+    opacity: 1;
+}
 /* #endregion */
 
 /* #region Portfolio */

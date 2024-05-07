@@ -55,6 +55,7 @@ p {
 
 img {
     display: block;
+    object-fit: cover;
 }
 
 a {
@@ -218,13 +219,13 @@ button {
 }
 
 .header-contacts-list {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
 }
 
 .header-contacts-link {
     display: block;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     color: rgba(var(--slate), 1);
     transition: var(--trans);
     transition-property: color;
@@ -233,6 +234,22 @@ button {
 .header-contacts-link:hover,
 .header-contacts-link:focus {
     color:rgba(var(--ocean), 1);
+}
+
+.header-menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
 /* #endregion */
 
@@ -325,8 +342,9 @@ button {
 .team-item:focus .social-media-link {
     background-color: rgba(var(--ocean), 1);
 }*/
-.team-item .social-media-link:hover,
-.team-item .social-media-link:focus {
+
+.social-media-link:hover,
+.social-media-link:focus {
     background-color: rgba(var(--ocean), 1);
 }
 
@@ -400,7 +418,7 @@ button {
 }
 
 .footer-logo-paragraph {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .logo-footer {
@@ -422,7 +440,7 @@ button {
 }
 
 .footer-social-media {
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 
 .footer-social-media .social-media-link:hover,
@@ -464,8 +482,9 @@ button {
 
 /* #region Subscribe*/
 .footer-email-field {
-    display: flex;
+    /* display: flex; */
 }
+
 .footer-email-label {
     color: rgba(var(--white), 1);
     line-height: 2;
@@ -484,6 +503,7 @@ button {
     border: 1px solid rgba(var(--white), 1);
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
     outline: transparent;
     transition: var(--trans);
     transition-property: border-color;
@@ -778,3 +798,4 @@ input[type='checkbox']:checked+.modal-pp-label>.pp-checkbox>.pp-checkbox-icon {
     fill: rgba(var(--cloud), 1);
 }
 /* #endregion */
+
