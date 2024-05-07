@@ -187,6 +187,12 @@
 }
 /* #endregion */
 
+/* #region Modal*/
+.modal {
+    max-width: 392px;
+}
+/* #endregion */
+
 /* #region Menu mobile*/
 .menu-toggle {
     background-color: rgba(var(--cornflower), 0.1);

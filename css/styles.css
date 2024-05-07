@@ -417,6 +417,7 @@ button {
     display: flex;
 }
 
+/* #region Logo paragraph*/
 .footer-logo-paragraph {
     /* margin-right: 120px; */
 }
@@ -439,6 +440,9 @@ button {
     color: rgba(var(--cloud), 1);
 }
 
+/* #endregion */
+
+/* #region Social Media*/
 .footer-social-media {
     /* margin-right: 80px; */
 }
@@ -448,7 +452,6 @@ button {
     background-color: rgba(var(--green), 1);
 }
 
-/* #region Social Media*/
 .social-media-list {
     display: flex;
     gap: 16px;
@@ -626,7 +629,8 @@ button {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 408px;
+    max-width: 408px;
+    width: 100%;
     min-height: 584px;
     line-height: 1.16667;
     border-radius: 4px;
