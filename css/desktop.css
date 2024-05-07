@@ -2,7 +2,7 @@
 .container {
     max-width: 1158px;
     padding: 0 15px;
-    outline-color: burlywood;
+    /* outline-color: burlywood; */
 }
 
 .wrapper {

@@ -8,7 +8,7 @@
 /* #region Base styles */
 .container {
     max-width: 768px;
-    outline-color: cadetblue;
+    /* outline-color: cadetblue; */
 }
 
 .wrapper {
